@@ -1,0 +1,59 @@
+payload:
+  # Minecraft Basic Ports / 마인크래프트 기본 포트 (Java & Bedrock)
+  - DST-PORT,25565 # Java Edition Default Port / 자바 에디션 기본 포트
+  - SRC-PORT,25565
+  - DST-PORT,19132 # Bedrock Edition UDP Port / 베드락 에디션 UDP 포트
+  - DST-PORT,19133 # Bedrock Edition Additional UDP Port / 베드락 에디션 추가 UDP 포트
+  
+  # Official Minecraft Services / 공식 마인크래프트 서비스
+  - DOMAIN-SUFFIX,mojang.com
+  - DOMAIN-SUFFIX,minecraft.net
+  - DOMAIN-SUFFIX,minecraftservices.com
+  - DOMAIN-SUFFIX,minecraft-services.net
+  - DOMAIN-SUFFIX,xboxlive.com  # Microsoft Account Authentication / Microsoft 계정 인증 관련
+  
+  # Major Multiplayer Servers / 주요 멀티플레이어 서버
+  - DOMAIN-SUFFIX,hypixel.net   # Hypixel / 하이픽셀
+  - DOMAIN-SUFFIX,cubecraft.net # CubeCraft / 큐브크래프트
+  - DOMAIN-SUFFIX,mineplex.com  # Mineplex / 마인플렉스
+  - DOMAIN-SUFFIX,2b2t.org      # 2b2t / 2b2t
+  - DOMAIN-SUFFIX,wynncraft.com # Wynncraft / 윈크래프트
+  
+  # Korean & PVP Servers / 한국 서버 및 PVP 서버
+  - DOMAIN-SUFFIX,syuu.net      # Syuu Server / 시유 서버
+  - DOMAIN-SUFFIX,minemen.club  # Minemen Club / 마인맨 클럽
+  - DOMAIN-SUFFIX,bedwarspractice.club # Bedwars Practice Server / 베드워즈 연습 서버
+  
+  # Mod & Plugin Platforms / 모드 및 플러그인 플랫폼
+  - DOMAIN-SUFFIX,curseforge.com  # CurseForge / 커스포지
+  - DOMAIN-SUFFIX,modrinth.com    # Modrinth / 모드린트
+  - DOMAIN-SUFFIX,spigotmc.org    # SpigotMC / 스피곳
+  - DOMAIN-SUFFIX,bukkit.org      # Bukkit / 버킷
+  - DOMAIN-SUFFIX,papermc.io      # PaperMC / 페이퍼MC
+  - DOMAIN-SUFFIX,fabricmc.net    # Fabric / 패브릭
+  - DOMAIN-SUFFIX,forge.net       # Forge / 포지
+  - DOMAIN-SUFFIX,optifine.net    # OptiFine / 옵티파인
+  
+  # Resource Sites / 리소스 사이트
+  - DOMAIN-SUFFIX,mcpedl.com          # Bedrock Edition Resources / 베드락 에디션 리소스
+  - DOMAIN-SUFFIX,planetminecraft.com # Planet Minecraft / 행성 마인크래프트
+  - DOMAIN-SUFFIX,minecraftskins.com  # Minecraft Skins / 마인크래프트 스킨 사이트
+  
+  # Useful Keyword Matching / 유용한 키워드 매칭
+  - DOMAIN-KEYWORD,minecraft
+  - DOMAIN-KEYWORD,minecraftservices
+  - DOMAIN-KEYWORD,minecraftforum
+  - DOMAIN-KEYWORD,minecraftwiki
+  - DOMAIN-KEYWORD,mcmod
+  - DOMAIN-KEYWORD,shadersmods
+  - DOMAIN-KEYWORD,hermitcraft  # Hermitcraft Server / 허밋크래프트 서버
+
+  # Microsoft Authentication / Microsoft 인증
+  - DOMAIN-SUFFIX,live.com
+  - DOMAIN-SUFFIX,microsoftonline.com
+  - DOMAIN-SUFFIX,passport.net
+  - DOMAIN-SUFFIX,mihoyo.com  # Genshin Redemption Codes / 젠신 리뎀션 코드용
+
+  # Other Essential Domains / 기타 필수 도메인
+  - DOMAIN-SUFFIX,geysermc.org  # Bedrock-Java Crossplay / 베드락-자바 크로스플레이
+  - DOMAIN-SUFFIX,education.minecraft.net  # Minecraft Education Edition / 교육용 마인크래프트
