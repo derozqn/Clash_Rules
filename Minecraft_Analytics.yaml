@@ -1,54 +1,87 @@
-payload:
-  # Minecraft & Mojang Analytics / 마인크래프트 및 모장 분석
-  - DOMAIN-SUFFIX,crashlogs.mojang.com           # Mojang Crash Logs / 모장 충돌 로그
-  - DOMAIN-SUFFIX,reporter.mojang.com            # Mojang Reporter / 모장 리포터
-  - DOMAIN-SUFFIX,api.minecraftservices.com/events # Events API / 이벤트 API
-  - DOMAIN-SUFFIX,data-optout.minecraft.net      # Opt-out Data / 옵트아웃 데이터
-  - DOMAIN-SUFFIX,bugreport.minecraft.net        # Bug Reports / 버그 리포트
-  - DOMAIN-SUFFIX,metrics.voyager.minecraftservices.com # Voyager Metrics / 보이저 메트릭스
-  - DOMAIN-SUFFIX,api.minecraftservices.com/minecraft/profile/telemetry # Profile Telemetry / 프로필 원격 측정
-  - DOMAIN-SUFFIX,data-collection.minecraft.net  # Data Collection / 데이터 수집
-  - DOMAIN-SUFFIX,realms-usage.net               # Realms Usage / 렐름 사용량
-  
-  # Minecraft Launcher Analytics / 마인크래프트 런처 분석
-  - DOMAIN,analytics.atlauncher.com              # ATLauncher Analytics / ATL런처 분석
-  - DOMAIN-SUFFIX,tlauncher-stats.com            # TLauncher Stats / TL런처 통계
-  - DOMAIN-SUFFIX,analytics.prismlauncher.org    # Prism Analytics / 프리즘 분석
-  
-  # Minecraft Mod Platforms Analytics / 마인크래프트 모드 플랫폼 분석
-  - DOMAIN,auxilium.ftb.team                     # FTB Telemetry / FTB 원격 측정
-  - DOMAIN,analytics.ftbwiki.org                 # FTB Wiki Analytics / FTB 위키 분석
-  - DOMAIN-SUFFIX,api-telemetry.curseforge.com   # CurseForge API Telemetry / 커스포지 API 원격 측정
-  - DOMAIN-SUFFIX,telemetry.modrinth.com         # Modrinth Telemetry / 모드린스 원격 측정
-  
-  # Minecraft Server & Plugin Analytics / 마인크래프트 서버 및 플러그인 분석
-  - DOMAIN,beacon.quiltmc.org                    # Quilt Analytics / Quilt 분석 도구
-  - DOMAIN,metrics.shmeeb.net                    # Plugin Metrics / 플러그인 메트릭스
-  - DOMAIN,openeye.openmods.info                 # OpenMods Crash Reports / 오픈모즈 충돌 보고
-  - DOMAIN-SUFFIX,bstats.org                     # Plugin Statistics / 플러그인 통계
-  - DOMAIN-SUFFIX,mcstats.org                    # Server Statistics / 서버 통계
-  - DOMAIN-SUFFIX,servercounter.net              # Server Counter / 서버 카운터
-  - DOMAIN-SUFFIX,mcapi.us                       # MC API Stats / MC API 통계
-  - DOMAIN-SUFFIX,analytics.essentialsx.net      # EssentialsX Analytics / 에센셜X 분석
-  - DOMAIN-SUFFIX,metrics.luckperms.net          # LuckPerms Metrics / 럭퍼름스 메트릭스
-  - DOMAIN-SUFFIX,craftbukkit-metrics.org        # CraftBukkit Metrics / 크래프트버킷 메트릭스
-  - DOMAIN-SUFFIX,log.spigotmc.org               # Spigot Logging / 스피곳 로깅
-  - DOMAIN-SUFFIX,mcmmo-metrics.net              # MCMMO Metrics / MCMMO 메트릭스
-  
-  # Minecraft Client/Mod Analytics / 마인크래프트 클라이언트/모드 분석
-  - DOMAIN-SUFFIX,mcmc.dev                       # Mod Metrics / 모드 메트릭스
-  - DOMAIN-SUFFIX,mcmodanalytics.com             # Mod Usage Stats / 모드 사용 통계
-  - DOMAIN-SUFFIX,mcmpstats.com                  # Modpack Stats / 모드팩 통계
-  - DOMAIN-SUFFIX,counterapi.forge.net           # Forge Counter API / 포지 카운터 API
-  - DOMAIN-SUFFIX,telemetry.forge.net            # Forge Telemetry / 포지 원격 측정
-  - DOMAIN-SUFFIX,badlion-telemetry.net          # Badlion Telemetry / 배드라이언 원격 측정
-  - DOMAIN-SUFFIX,metrics.badlion.net            # Badlion Metrics / 배드라이언 메트릭스
-  - DOMAIN-SUFFIX,telemetry.optifine.net         # OptiFine Telemetry / 옵티파인 원격 측정
-  - DOMAIN-SUFFIX,metrics.lunar.gg               # Lunar Client Metrics / 루나 클라이언트 메트릭스
-  - DOMAIN-SUFFIX,analytics.feather.gg           # Feather Analytics / 페더 분석
-  - DOMAIN-SUFFIX,analytics.vanillatweaks.net    # Vanilla Tweaks Analytics / 바닐라 트윅스 분석
-  - DOMAIN-SUFFIX,labymod-analytics.net          # LabyMod Analytics / 라비모드 분석
-  
-  # Minecraft Game Server Analytics / 마인크래프트 게임 서버 분석
-  - DOMAIN-SUFFIX,hypixel-analytics.net          # Hypixel Analytics / 하이픽셀 분석
-  - DOMAIN-SUFFIX,logging.playhive.com           # Hive Logging / 하이브 로깅 
+# Minecraft & Mojang Analytics / 마인크래프트 및 모장 분석
+||crashlogs.mojang.com^
+||reporter.mojang.com^
+||api.minecraftservices.com/events^
+||data-optout.minecraft.net^
+||bugreport.minecraft.net^
+||metrics.voyager.minecraftservices.com^
+||api.minecraftservices.com/minecraft/profile/telemetry^
+||data-collection.minecraft.net^
+||realms-usage.net^
+||sentry-proxy.mojang.com^
+||usage.minecraft.net^
+
+# Microsoft Telemetry (Minecraft 관련) / 마이크로소프트 텔레메트리 (마인크래프트 관련)
+||vortex.data.microsoft.com^
+||telemetry.microsoft.com^
+||watson.telemetry.microsoft.com^
+||v10.events.data.microsoft.com^
+||v20.events.data.microsoft.com^
+
+# Minecraft Launcher Analytics / 마인크래프트 런처 분석
+analytics.atlauncher.com
+||tlauncher-stats.com^
+||analytics.prismlauncher.org^
+||analytics.gdlauncher.com^
+||usage.multimc.org^
+||analytics.polymc.org^
+||stats.technicpack.net^
+||launcher-analytics.mojang.com^
+
+# Minecraft Mod Platforms Analytics / 마인크래프트 모드 플랫폼 분석
+auxilium.ftb.team
+analytics.ftbwiki.org
+||api-telemetry.curseforge.com^
+||telemetry.modrinth.com^
+||sentry.io^
+||usage.trackback.dev^
+||analytics.modmuss50.me^
+||telemetry.fabricmc.net^
+||analytics.modtweaker.com^
+||metrics.modmuss50.me^
+
+# Minecraft Server & Plugin Analytics / 마인크래프트 서버 및 플러그인 분석
+beacon.quiltmc.org
+metrics.shmeeb.net
+openeye.openmods.info
+||bstats.org^
+||mcstats.org^
+||servercounter.net^
+||mcapi.us^
+||analytics.essentialsx.net^
+||metrics.luckperms.net^
+||craftbukkit-metrics.org^
+||log.spigotmc.org^
+||mcmmo-metrics.net^
+||analytics.minehut.com^
+||metrics.papermc.io^
+||analytics.purpurmc.org^
+||analytics.velocitypowered.com^
+||analytics.nucleuspowered.org^
+||serverstats.minecraft.net^
+
+# Minecraft Client/Mod Analytics / 마인크래프트 클라이언트/모드 분석
+||mcmc.dev^
+||mcmodanalytics.com^
+||mcmpstats.com^
+||counterapi.forge.net^
+||telemetry.forge.net^
+||badlion-telemetry.net^
+||metrics.badlion.net^
+||telemetry.optifine.net^
+||metrics.lunar.gg^
+||analytics.feather.gg^
+||analytics.vanillatweaks.net^
+||labymod-analytics.net^
+||analytics.fabric.net^
+||metrics.fabricmc.net^
+||telemetry.mcclient.org^
+
+# Minecraft Game Server Analytics / 마인크래프트 게임 서버 분석
+||hypixel-analytics.net^
+||logging.playhive.com^
+||metrics.mineplex.com^
+||analytics.cubecraft.net^
+||stats.lifeboat.net^
+||analytics.galaxite.net^
+||telemetry.wynncraft.com^
